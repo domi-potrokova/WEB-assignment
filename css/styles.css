@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: black;
+    color: #00ffff;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #00ffff;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+nav a {
+    color: #ff00ff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.text-content h2, .left-column h2, .right-column h2, .middle-column h2, .row h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00ffff;
+}
+
+.text-content p, .left-column, .right-column, .middle-column, .row {
+    font-size: 1.2rem;
+    color: #d0f0f0;
+}
+
+.text-content {
+    width: 65%;
+}
+
+.left-column, .right-column, .middle-column {
+    display: flex; /*both take equal width*/
+    flex-direction: column;
+}
+
+.left-column{
+    max-width: 40%;
+}
+
+.right-column{
+    max-width: 60%;
+}
+
+.row {
+   display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start;
+    margin-bottom: 100px;
+}
+
+.row div{
+    width: 33%;
+}
+
+.row img {
+    display: block;
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  body {
+    background-color: lightcoral;
+  }
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: flex-start; /*vertically align at top*/
+}
+
+.profile-section img {
+    width: 30%;
+    height:auto;
+}
+
+.container {
+    padding: 50px;
+}
+
